@@ -56,8 +56,10 @@ var config = {
 
         // P2P test mode disables automatic switching to P2P when there are 2
         // participants in the conference.
-        p2pTestMode: false
-
+        p2pTestMode: false,
+        octo: {
+                probability: 1
+            }
         // Enables the test specific features consumed by jitsi-meet-torture
         // testMode: false
     },
@@ -377,8 +379,9 @@ var config = {
     // the user region as seen by the server.
     deploymentInfo: {
         // shard: "shard1",
-        // region: "europe",
-        // userRegion: "asia"
+        region: "oceania",
+        // run by nginx server side includes
+        userRegion: '<!--#echo var="http_viewer_continent" default="oceania"-->'
     }
 
     // Local Recording
