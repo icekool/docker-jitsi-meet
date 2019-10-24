@@ -29,6 +29,7 @@ services:
             - XMPP_MUC_DOMAIN
             - ETHERPAD_URL_BASE
             - TZ
+            - GA_TRACKING_CODE
         networks:
             meet.jitsi:
 
