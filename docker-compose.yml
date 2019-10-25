@@ -140,6 +140,8 @@ services:
             - JVB_ENABLE_APIS
             - JICOFO_AUTH_USER
             - TZ
+            - JVB_OCTO_PUBLIC_ADDRESS
+            - JVB_OCTO_REGION
         depends_on:
             - prosody
         networks:
