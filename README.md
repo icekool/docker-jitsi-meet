@@ -26,9 +26,12 @@ This repository contains the necessary tools to run a Jitsi Meet stack on [Docke
 
 ## Quick start
 
+### Jitsi meet
+
 In order to quickly run Jitsi Meet on a machine running Docker and Docker Compose,
 follow these steps:
 
+* Build the docker images by running ``make``.
 * Create a ``.env`` file by copying and adjusting ``env.example``.
 * Run ``docker-compose up -d``.
 * Access the web UI at ``https://localhost:8443`` (or ``http://localhost:8000`` for HTTP, or
@@ -39,6 +42,15 @@ and then run Docker Compose as follows: ``docker-compose -f docker-compose.yml -
 
 If you want to enable document sharing via [Etherpad], configure it and run Docker Compose as
 follows: ``docker-compose -f docker-compose.yml -f etherpad.yml up``
+
+### Jitsi videobridge
+
+In order to quickly run secondary video bridge or a independent videobridge on a machine running Docker and Docker Compose,
+follow these steps:
+
+* Build the docker images by running ``make build JITSI_SERVICE=jvb``.
+* Create a ``.env`` file by copying and adjusting ``env.example``.
+* Run ``docker-compose -f videobridge.yml up -d``.
 
 ## Architecture
 
