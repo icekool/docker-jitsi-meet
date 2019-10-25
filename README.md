@@ -275,6 +275,10 @@ Variable | Description | Default value
 `ENABLE_HTTP_REDIRECT` | Redirects HTTP traffic to HTTPS | 1
 `LOG_LEVEL` | Controls which logs are output from prosody and associated modules | info
 `GA_TRACKING_CODE` | Google analytics tracking code | UA-123456789-1
+`MEET_DEFAULT_REGION` | Region in which jitsi-meet is hosted | oceania
+`DEFAULT_VIDEOBRIDGE_REGION` | Region in which the default videobridge is hosted | oceania
+`JVB_OCTO_PUBLIC_ADDRESS` | Publicly accessible ip address of the video bridge to advertise for OCTO | 13.55.49.161
+`JVB_OCTO_REGION` | The region that the jitsi-videbridge instance is in |oceania
 
 ### Running behind NAT or on a LAN environment
 
