@@ -379,9 +379,9 @@ var config = {
     // the user region as seen by the server.
     deploymentInfo: {
         // shard: "shard1",
-        region: "oceania",
+        region: "jitsi-meet-server-region",
         // run by nginx server side includes
-        userRegion: '<!--#echo var="http_viewer_continent" default="oceania"-->'
+        userRegion: '<!--#echo var="http_viewer_continent" default="default-videobridge-region"-->'
     }
 
     // Local Recording

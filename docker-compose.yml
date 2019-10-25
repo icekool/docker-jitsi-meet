@@ -31,6 +31,8 @@ services:
             - ETHERPAD_URL_BASE
             - TZ
             - GA_TRACKING_CODE
+            - MEET_DEFAULT_REGION
+            - DEFAULT_VIDEOBRIDGE_REGION
         networks:
             meet.jitsi:
 
